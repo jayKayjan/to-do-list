@@ -1,0 +1,81 @@
+body {
+  padding: 60px;                        /*background colour of the page is changed, as well a the font*/
+  background-color: orange ;
+  font-family: sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.todoListMain .header input {     /*box to enter items*/
+  padding: 15px; 
+  font-size: 20px;
+  border: 8px solid yellow;
+  width: 180px;
+}
+
+.todoListMain .header button {    /*add task button*/
+  padding: 15px;
+  font-size: 20px;
+  margin: 15px;
+  margin-right: 0px;
+  background-color: red;
+  color: yellow;
+  border: 5px solid yellow;
+}
+
+.todoListMain .header button:hover {     /*the colour is changed when hovered over, the colour of the button's border changes*/
+  background-color: grey;
+  border: 2px solid yellow;
+  cursor: pointer;
+}
+
+.todoListMain .theList {               /*the bullet points are removed from the list*/
+  list-style: none;
+  color: red;
+  padding-left: 0;
+  width: 150px;
+}
+
+.todoListMain .theList li {                                 
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  list-style: none;
+}
+
+ul.theList {
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+
+.theList li {
+  color: #333;
+  background-color: rgba(300, 250, 240, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
+}
+
+.todoListMain .theList li:hover {
+
+  cursor: pointer;
+}
+
+ ul.theList li:hover{                  /*the colour and background colour of the list inside to button changes */
+	background-color: grey;
+	color: yellow;
+	cursor: pointer;
+}
+
+
